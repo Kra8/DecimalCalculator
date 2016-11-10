@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <title>進数電卓</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
     </head>
     <body>
         <header>
-            <h1>進数電卓</h1>
+            <h1 class = "h1-white">進数電卓</h1>
         </header>
+        <div id = "content">
+            <div class = "display-wrap">
+                <div class = "display display-ready">
+                    <ul class = "tab-menu">
+                        <li class = "selected"><a href="#">10進数</a></li>
+                        <li><a href="#">2進数</a></li>
+                        <li><a href="#">8進数</a></li>
+                        <li><a href="#">16進数</a></li>
+                    </ul>
+                    <div class = "number-display">
+                        <div class="operand ready-operand">0</div>
+                        <div class="operand ready-operand"></div>
+                        <div class="operand ready-operand">0</div>
+                    </div>
+                    <div class = "number-display">
+                        <div class="operand ready-operand">=</div>
+                        <div class="operand ready-operand"></div>
+                    </div>
+                </div>
+                
+                <div class = "display display-result">
+                    <ul class = "tab-menu">
+                        <li class = "selected"><a href="#">10進数</a></li>
+                        <li><a href="#">2進数</a></li>
+                        <li><a href="#">8進数</a></li>
+                        <li><a href="#">16進数</a></li>
+                    </ul>
+                    <div class = "number-display">
+                        <div class="operand result-operand">0</div>
+                        <div class="operand result-operand"></div>
+                        <div class="operand result-operand">0</div>
+                    </div>
+                    <div class = "number-display">
+                        <div class="operand result-operand">=</div>
+                        <div class="operand result-operand"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "number-pad">
+                <div class = "number-field">
+                    <a class="pad-button">1</a>
+                    <a class="pad-button">2</a>
+                    <a class="pad-button">3</a>
+                    <a class="pad-button">4</a>
+                    <a class="pad-button">5</a>
+                    <a class="pad-button">6</a>
+                    <a class="pad-button">7</a>
+                    <a class="pad-button">8</a>
+                    <a class="pad-button">9</a>
+                    <a class="pad-button">a</a>
+                    <a class="pad-button">b</a>
+                    <a class="pad-button">c</a>
+                    <a class="pad-button">d</a>
+                    <a class="pad-button">e</a>
+                    <a class="pad-button">f</a> 
+                    <a class="pad-button zero-button">0</a>
+<!--                    <a class="pad-button piriod-button">.</a>-->
+                </div>
+                <div class = "operator-field">
+                    <a class="pad-button">÷</a>
+                    <a class="pad-button">×</a>
+                    <a class="pad-button">+</a>
+                    <a class="pad-button">-</a>
+                </div>
+                <div class = "control-field">
+                    <a class="pad-button clear-button">AC</a>
+                    <a class="pad-button equal-button">=</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span> Copyright &copy; 2016 K.Asai All rights reserved . </span>
+        </footer>
+        <script src="assets/js/decimal-calculator.js" type="text/javascript"></script>
+        
     </body>
 </html>

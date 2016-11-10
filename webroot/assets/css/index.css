@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+html, body {
+    min-width: 364px;
+}
+
+/*----------------------------------------
+    -- Header --
+------------------------------------------*/
+header {
+    /*-- configure --*/
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    
+    /*-- decoration --*/
+    background-color: #363636;
+}
+
+.h1-white {
+    /*-- configure --*/
+    padding-left: 32px;
+
+    /*-- decoration --*/
+    font-size : 24px;
+    color: #eee;
+    font-weight: normal;
+}
+
+/*----------------------------------------
+    -- Footer --
+------------------------------------------*/
+footer {
+    margin: 0 16px; 
+    border-top: solid 1px #ddd;
+}
+
+footer span {
+    font-size: 12px;
+    color: #bbb;
+}
+
+
+/*----------------------------------------
+    -- Content --
+------------------------------------------*/
+#content{
+    -webkit-display: flex;
+    -moz-display: flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+.display-wrap{
+    width: 100%;
+    max-width: 800px;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+.display{
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    
+    margin: auto;
+}
+
+.tab-menu {
+    /*-- configure --*/
+    width: 320px;
+    height: 38px;
+    margin: 8px;
+    
+    /*-- decoration --*/
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 1px 1px #777;
+    -moz-box-shadow: 0px 0px 1px 1px #777;
+    box-shadow: 0px 0px 1px 1px #777;
+}
+
+.tab-menu li{
+    /*-- configure --*/
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+    
+    /*-- decoration --*/
+    text-align: center;
+    line-height: 38px;
+    background-color: #363636;
+    border: ridge 1px #363636; 
+    border-right: ridge 1px #ddd;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.tab-menu li:nth-child(4) {
+    border-right: none;
+}
+
+.tab-menu li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.tab-menu .selected{
+    background-color: #ddd;
+    border: ridge 1px #ddd;
+    border-right: ridge 1px #363636;
+    color: #363636;
+}
+
+.tab-menu li a:visited{ color: #ddd; }
+.tab-menu .selected a:visited{ color: #363636; }
+
+.number-display {
+    /*-- configure --*/
+    min-width: 320px;
+    width: 320px;
+    height: 64px;
+    margin: 0 8px;
+    display: inline-flex;
+    align-items: center;
+    
+    /*-- decoration --*/
+    -webkit-box-shadow: 0px 0px 1px 1px #777;
+    -moz-box-shadow: 0px 0px 1px 1px #777;
+    box-shadow: 0px 0px 1px 1px #777;   
+}
+
+.operand {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.number-pad{
+    width: 320px;
+    min-width :320px;
+    margin: 8px;
+    
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-wrap: nowrap;
+    -moz-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.number-field {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-width: 220px;
+    width: 220px;
+}
+
+.operator-field {
+    width: 44px;
+    min-width: 44px;
+}
+
+.operator-field .pad-button {
+    background-color: darkorange;
+}
+
+.pad-button {
+    /*-- configure --*/
+    display: block;
+    min-width: 44px;
+    width: 44px;
+    min-height: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    
+    /*-- decoration --*/
+    text-align: center;
+    line-height: 44px;
+    border: ridge 1px #aaa;
+    background-color: #eee;
+}
+
+.zero-button{ 
+    min-width: 132px;
+    width: 132px;
+}
+
+.clear-button{
+    min-width: 56px;
+    width: 56px;
+    
+    background-color: #999;
+}
+
+.equal-button{
+    min-width: 56px;
+    width: 56px;
+    min-height: 132px;
+    height: 132px;
+    line-height: 132px;
+    
+    background-color: darkorange;
+}
+
+
+
+
+
+
+.piriod-button {
+    min-width: 88px;
+    width: 88px;
+}

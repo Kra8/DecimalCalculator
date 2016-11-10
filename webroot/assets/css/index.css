@@ -213,8 +213,8 @@ footer span {
 }
 
 .zero-button{ 
-    min-width: 132px;
-    width: 132px;
+    min-width: 220px;
+    width: 220px;
 }
 
 .clear-button{
@@ -234,12 +234,11 @@ footer span {
     background-color: darkorange;
 }
 
-
-
-
-
-
 .piriod-button {
     min-width: 88px;
     width: 88px;
+}
+
+.dark-button {
+    background-color: #111;
 }
